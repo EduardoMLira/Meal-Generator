@@ -1,0 +1,92 @@
+body {
+    background-image: url('Imagens/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.mainTitle{
+    font-size: 3rem;
+    padding: 1rem 1rem 0px;
+}
+
+.subTitle{
+    font-size: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 0;
+}
+
+.mainContainer {
+    background-color: rgb(66, 97, 103, .9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBody {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mealButton {
+    color: white;
+    background-color: rgb(23, 23, 23, .8);
+    padding: 1em 2em;
+    border: none;
+    border-radius: .6rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .mealButton span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    width: 30px;
+    background-color: rgb(114, 52, 52, .8);
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  .mealButton span:nth-child(6) {
+    position: relative;
+  }
+  
+  .mealButton span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  .mealButton span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  .mealButton span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  .mealButton span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  .mealButton span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  .mealButton:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    
