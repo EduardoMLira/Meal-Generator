@@ -2,10 +2,15 @@ body {
     background-image: url('Imagens/background.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Fixa a imagem de fundo */
+    background-attachment: fixed;
+    padding: 1rem;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
 }
 
 .mainTitle{
@@ -19,7 +24,7 @@ body {
     margin: 0;
 }
 
-.mainContainer {
+.generatorDiv {
     background-color: rgb(66, 97, 103, .9);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 0.8rem;
@@ -30,17 +35,9 @@ body {
     align-items: center;
 }
 
-.mainBody {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .mealButton {
     color: white;
-    background-color: rgb(23, 23, 23, .8);
+    background-color: rgb(114, 52, 52, .8);
     padding: 1em 2em;
     border: none;
     border-radius: .6rem;
@@ -56,7 +53,7 @@ body {
     transform: translate(-50%, -50%);
     height: 30px;
     width: 30px;
-    background-color: rgb(114, 52, 52, .8);
+    background-color: rgba(162, 97, 97, 0.8);
     border-radius: 50%;
     transition: .6s ease;
   }
@@ -89,4 +86,47 @@ body {
     transform: translate(-50%, -50%) scale(4);
     transition: 1.5s ease;
   }
-    
+
+.mainFooter{
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .mainTitle {
+        font-size: 2rem;
+    }
+
+    .subTitle {
+        font-size: 0.9rem;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .mealButton {
+        padding: 0.8em 1.5em;
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para telas ainda menores (muito pequenas) */
+@media (max-width: 480px) {
+    .mainTitle {
+        font-size: 1.5rem;
+    }
+
+    .subTitle {
+        font-size: 0.8rem;
+    }
+
+    .mealButton {
+        padding: 0.7em 1.2em;
+        font-size: 0.9rem;
+    }
+}
