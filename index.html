@@ -32,23 +32,21 @@
     </section>
     <section class="randomMeal">
         <div class="randomMealDiv">
-            <h1 class="secondTitle">Sugestão</h1>
-            <p class="mealInstructions">sdsadsadsadsadsads</p>
-            <img style="height: 200px; width: 200px;" id="mealImg" src="" alt="Food">
-            <ol>
-                <li>Category: <span id="category"></span></li>
-                <li id="area">Area: </li>
-                <li id="tags">Tags: </li>
-            </ol>
+            <h1 class="mealName" id="mealName"></h1>
+            <div class="imgBox">
+                <img style="height: 300px; width: 400px;" id="mealImg" src="" alt="Meal image">
+                <p>
+                    Category: <span id="category"></span><br>
+                    Area: <span id="area"></span><br>
+                    Tags: <span id="tags"></span>
+                </p>
+                <p>Ingredients: <span id="ingredientList"></span></p>
+            </div>
+            <p id="instructions"></p>
+            <video  style="height: 300px; width: 500px;" id="mealVideo" controls src=""></video>
         </div>
     </section>
 </body>
-
-<footer>
-    <section  class="mainFooter">
-        <h2>test</h2>
-    </section>
-</footer>
 
     <script src="javascript/main.js"></script>
     <script src="javascript/meal-api.js"></script>

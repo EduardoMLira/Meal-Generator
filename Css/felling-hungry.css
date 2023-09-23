@@ -87,20 +87,44 @@ body {
   transition: 1.5s ease;
 }
 
-.mainFooter{
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  position: absolute;
-  height: auto;
-  bottom: 0;
-  left: 0; 
-  right: 0;
-}
-
 .randomMeal{
   display: none;
+}
+
+.randomMealDiv {
+  background-color: rgba(203, 216, 219, 0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.8rem;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+#instructions{
+  max-width: 31rem;
+}
+
+#mealImg {
+  width: 190px;
+  height: 254px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -117,6 +141,15 @@ body {
     padding: 0.8em 1.5em;
     font-size: 1rem;
   }
+
+  #mealImg {
+    width: 150px;
+    height: 200px;
+  }
+
+  #instructions {
+    max-width: 25rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -129,7 +162,16 @@ body {
   }
 
   .mealButton {
-      padding: 0.7em 1.2em;
-      font-size: 0.9rem;
+    padding: 0.7em 1.2em;
+    font-size: 0.9rem;
+  }
+
+  #mealImg {
+    width: 120px;
+    height: 160px;
+  }
+
+  #instructions {
+    max-width: 20rem;
   }
 }
